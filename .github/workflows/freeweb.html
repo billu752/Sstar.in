@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding & Gaming Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #87CEEB;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            background-image: linear-gradient(to bottom, #87CEEB, #FFFFFF);
+            color: #003f7d;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00509E;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            font-family: 'Press Start 2P', cursive;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #4364f7, #6200ea);
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .cta-button:active {
+            transform: translateY(1px);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #gameButton {
+            /* Game controller icon */
+        }
+
+        #codingButton {
+            /* Computer/Code icon */
+        }
+
+        #about-us {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+        }
+
+        #about-us h2 {
+            font-size: 2rem;
+            color: #00509E;
+            margin-bottom: 1rem;
+        }
+
+        #about-us p {
+            font-size: 1.1rem;
+            color: #003f7d;
+            line-height: 1.5;
+        }
+
+        #entertainment {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            margin-bottom: 2rem;
+        }
+
+        #entertainment h2 {
+            font-size: 2rem;
+            color: #00509E;
+            margin-bottom: 1rem;
+        }
+
+        #entertainment ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #003f7d;
+        }
+
+        #entertainment li {
+            margin-bottom: 0.5rem;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+        }
+
+        .form-container h2 {
+            font-size: 2rem;
+            color: #00509E;
+            margin-bottom: 1rem;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 300px;
+            gap: 1rem;
+        }
+
+        .form-container label {
+            font-size: 1.1rem;
+            color: #003f7d;
+            text-align: left;
+        }
+
+        .form-container input {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form-container button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            font-family: 'Press Start 2P', cursive;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .form-container button:hover {
+            background: linear-gradient(135deg, #4364f7, #6200ea);
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            transform: translateY(-3px);
+        }
+
+        .form-container button:active {
+            transform: translateY(1px);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .cta-button {
+                width: 100%;
+            }
+
+            #about-us h2,
+            #entertainment h2 {
+                font-size: 1.5rem;
+            }
+
+            #about-us p,
+            #entertainment ul {
+                font-size: 0.9rem;
+            }
+
+            #about-us,
+            #entertainment,
+            .form-container {
+                padding: 1.5rem;
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="login-signup-form" class="form-container">
+        <h2>Login / Signup</h2>
+        <form id="user-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+            <div id="username-error" class="error-message"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <div id="password-error" class="error-message"></div>
+
+            <button type="submit">Login / Signup</button>
+        </form>
+        <div id="form-message" class="error-message"></div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <h1>Welcome to Sstar</h1>
+        <p>
+            Explore the world of coding and gaming. Start your journey here!
+        </p>
+        <div class="button-container">
+            <button class="cta-button" id="gameButton">
+                 🎮 Play Games
+            </button>
+            <button class="cta-button" id="codingButton">
+                💻 Learn Coding
+            </button>
+        </div>
+
+        <section id="about-us">
+            <h2>About Sstar</h2>
+            <p>
+                Sstar is your hub for exploring the exciting intersection of technology and entertainment.  We provide resources and access to both coding education and a variety of fun games.  Whether you're looking to expand your knowledge or unwind with some entertainment, CodeBase has something for you.
+            </p>
+        </section>
+
+        <section id="entertainment">
+            <h2>More Entertainment</h2>
+            <p>
+                While you can access games by clicking the "Play Games" button, here are some other entertainment options:
+            </p>
+            <ul>
+                <li>Explore interactive simulations</li>
+                <li>Watch coding-related videos</li>
+                <li>Participate in online coding challenges</li>
+                <li>Discover creative coding projects</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        const loginSignupForm = document.getElementById("login-signup-form");
+        const userForm = document.getElementById("user-form");
+        const gameButton = document.getElementById("gameButton");
+        const codingButton = document.getElementById("codingButton");
+        const mainContent = document.getElementById("main-content");
+        const formMessage = document.getElementById("form-message");
+
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+        let loggedInUser = null;
+
+        function validateForm() {
+            const usernameInput = document.getElementById("username");
+            const passwordInput = document.getElementById("password");
+            const usernameError = document.getElementById("username-error");
+            const passwordError = document.getElementById("password-error");
+
+            let isValid = true;
+
+            if (!usernameInput.value.trim()) {
+                usernameError.textContent = "Please enter a username.";
+                isValid = false;
+            } else {
+                usernameError.textContent = "";
+            }
+
+            if (!passwordInput.value.trim()) {
+                passwordError.textContent = "Please enter a password.";
+                isValid = false;
+            } else {
+                passwordError.textContent = "";
+            }
+
+            return isValid;
+        }
+
+        function handleLoginSignup(event) {
+            event.preventDefault();
+
+            if (!validateForm()) {
+                return;
+            }
+
+            const username = event.target.username.value.trim();
+            const password = event.target.password.value.trim();
+
+            const existingUser = users.find((user) => user.username === username);
+
+            if (existingUser) {
+                if (existingUser.password === password) {
+                    loggedInUser = existingUser;
+                    localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+                    formMessage.textContent = "Login successful!";
+                    showMainContent();
+                } else {
+                    formMessage.textContent = "Incorrect password.";
+                }
+            } else {
+                const newUser = { username, password };
+                users.push(newUser);
+                localStorage.setItem("users", JSON.stringify(users));
+                loggedInUser = newUser;
+                localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+                formMessage.textContent = "Signup successful!";
+                showMainContent();
+            }
+
+            event.target.reset();
+        }
+
+        function showMainContent() {
+            loginSignupForm.classList.add("hidden");
+            mainContent.classList.remove("hidden");
+        }
+
+        function checkLoginStatus() {
+            const storedUser = localStorage.getItem('loggedInUser');
+            if (storedUser) {
+                loggedInUser = JSON.parse(storedUser);
+                showMainContent();
+            }
+        }
+
+        userForm.addEventListener("submit", handleLoginSignup);
+
+        gameButton.addEventListener("click", () => {
+            // Redirect to CrazyGames
+            window.location.href = "https://www.crazygames.com/";
+        });
+
+        codingButton.addEventListener("click", () => {
+            // Use a relative path for same-origin navigation to coding.html
+            window.location.href = "terms.html";
+        });
+
+        checkLoginStatus();
+    </script>
+</body>
+</html>
+
+</body>
+</html>
